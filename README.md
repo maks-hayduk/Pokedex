@@ -1,6 +1,6 @@
 # Pokedex
 
-This project was made with Angular CLI.
+This project was made using Angular CLI and API from `https://pokeapi.co`.
 
 ## How to start
 
