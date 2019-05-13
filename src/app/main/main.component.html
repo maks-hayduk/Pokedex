@@ -1,19 +1,13 @@
 <p id="header">Pokedex</p>
+
 <div id="main">
   <div id="pokemons">
-    <div class="pokeField"></div>
-    <div class="pokeField"></div>
-    <div class="pokeField"></div>
-    <div class="pokeField"></div>
-    <div class="pokeField"></div>
-    <div class="pokeField"></div>
-    <div class="pokeField"></div>
-    <div class="pokeField"></div>
-    <div class="pokeField"></div>
-    <div class="pokeField"></div>
-    <div class="pokeField"></div>
-    <div class="pokeField"></div>
+    <div *ngFor="let item of data;" class="pokeField" >
+      {{item.name}}
+      <img src="{{item.about?.sprites.front_default}}" alt="">
+    </div>
   </div>
-  <button id="loadMore" type="button">Load More</button>
+  <button id="loadMore" type="button" (click)="loadMore()">Load More</button>
 </div>
+
 <div id="infoField"></div>

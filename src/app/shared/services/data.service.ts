@@ -6,10 +6,13 @@ import { Observable } from 'rxjs/internal/Observable';
   providedIn: 'root'
 })
 export class DataService {
-
   constructor(private http: HttpClient) {}
+  
+  public getAllPokemons(amount: Number, start: Number): Observable<any>{
+    return this.http.get<any>(`poke/api/v2/pokemon/?limit=${amount}&offset=${start}`);
+  }
 
-  public getAllPokemons(amount: Number): Observable<Array<any>>{
-    return this.http.get<Array<any>>(`http://pokeapi.co/api/v1/pokemon/?limit=${amount}`);
+  public getOnePokemon(url: string): Observable<any>{
+    return this.http.get<any>(`poke/${url}`);
   }
 }

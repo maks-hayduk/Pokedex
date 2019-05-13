@@ -1,0 +1,10 @@
+{
+    "/poke": {
+      "target": "https://pokeapi.co",
+      "secure": true,
+      "pathRewrite": {
+      "^/poke": ""
+    },
+      "changeOrigin": true
+    }
+}
