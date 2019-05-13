@@ -9,7 +9,7 @@ import { DataService } from 'src/app/shared/services/data.service';
 export class MainComponent implements OnInit {
 
   constructor(private dataService: DataService) { 
-    this.dataService.getAllPokemons(12).subscribe(data => console.log(data));
+    // this.dataService.getAllPokemons(12).subscribe(data => console.log(data));
   }
 
   ngOnInit() {

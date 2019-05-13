@@ -1,0 +1,78 @@
+#header{
+    height: 70px;
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    padding-top: 15px;
+    font-weight: bold;
+    position: fixed;
+    background-color: white;
+}
+#main{
+    width: 70%;
+    min-height: 500px;
+    background-color: black;
+    padding-top: 70px;
+}
+#infoField{
+    height: 400px;
+    width: 270px;
+    background-color: aqua;
+    position: fixed;
+    top: 50vh;
+    right: 70px;
+    transform: translate(0,-50%);
+}
+#pokemons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pokeField{
+    height: 300px;
+    width: 200px;
+    background-color: bisque;
+    margin:20px;
+}
+#loadMore{
+    width: 80%;
+    height: 45px;
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 23px;
+}
+
+
+
+
+
+
+@media (max-width: 1120px){
+    #infoField{
+        right: 30px;
+    }
+}
+@media (max-width: 1029px){
+    #main{
+        width: 60%;
+    }
+    #infoField{
+        right: 60px;
+    }
+}
+@media (max-width: 850px){
+    #infoField{
+        right: 40px;
+    }
+}
+@media (max-width: 720px){
+    #main{
+        width: 100%;
+    }
+    #infoField{
+        right: 50%;
+        transform: translate(50%,-50%);
+    }
+}
